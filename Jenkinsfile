@@ -21,7 +21,8 @@ stages {
     }
     stage('Provisioning Resources'){
         steps {
-            sh 'terraform destroy --auto-approve'
+            sh 'terraform apply --auto-approve'
+           // sh 'terraform destroy --auto-approve'
         }
     }
 }
